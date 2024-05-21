@@ -9,5 +9,8 @@ const toys = [
 ];
 let tmp = []
 for (const jugete in toys) {
-
+    if (!toys[jugete].name.includes("gato")) {
+        tmp.push(toys[jugete])
+    }
 }
+console.log(tmp)
